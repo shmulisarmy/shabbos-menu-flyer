@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Flyer</title>
+<script src="index.js"></script>
+
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -89,10 +91,24 @@
         [hide]{
             display: none;
         }
+
+        button{
+            background-color: rgb(42, 22, 60);
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        
     </style>
+    <link rel="stylesheet" href="management.css">
 </head>
-<body contenteditable="">
-    <div class="flyer">
+<body >
+    <button onclick="load_newest_version()">load newer version</button>
+    <button onclick="save_flyer()">save</button>
+    <div class="flyer" contenteditable>
 <header>
     <img src="https://static.wixstatic.com/media/1f1c07_1bf5b24196514765a3b092507353e9f7~mv2.jpeg/v1/fill/w_1036,h_770,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/1f1c07_1bf5b24196514765a3b092507353e9f7~mv2.jpeg" alt="">
 </header>
@@ -192,8 +208,8 @@
                 +1 (954) 520-5139
             </a>
         </div>
+     
     </footer>
 </body>
-<script src="index.js"></script>
 
 </html>
